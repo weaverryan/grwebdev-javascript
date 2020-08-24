@@ -7,6 +7,7 @@ Encore
     // will output as public/build/app.js
     .addEntry('app', './public/app.js')
     .enableSourceMaps(!Encore.isProduction())
+    .enableReactPreset()
 ; 
 
 module.exports = Encore.getWebpackConfig(); 
