@@ -3,9 +3,12 @@
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "@symfony/webpack-encore": "^0.30.2",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
@@ -14,5 +17,6 @@
     "defaults",
     "not IE 11",
     "not IE_Mob 11"
-  ]
+  ],
+  "devDependencies": {}
 }
