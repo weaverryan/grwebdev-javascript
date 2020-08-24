@@ -1,5 +1,6 @@
 import Store from './store';
 import Counter from './Counter';
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -7,15 +8,13 @@ import ReactDOM from 'react-dom';
 import './styles.css';
 
 const app = document.querySelector('#app');
-const store = new Store(app, [
-    'Sheer Shears',
-    'Wool Hauling Basket',
-    'After-Shear (Fresh Cut Grass)',
-    'After-Shear (Morning Dew)',
-    'Shear Comb',
-    'Shearly Conditioned'
-]);
-store.initialize();
+
+axios.get('/products')
+    .then(response => {
+        const store = new Store(app, response.data);
+        store.initialize();
+    })
+;
 
 ReactDOM.render(
     <Counter />,
