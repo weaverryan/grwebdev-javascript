@@ -9,9 +9,12 @@ import './styles.css';
 
 const app = document.querySelector('#app');
 
-const response = await axios.get('/products');
-const store = new Store(app, response.data);
-store.initialize();
+async function initializeStore() {
+    const response = await axios.get('/products');
+    const store = new Store(app, response.data);
+    store.initialize();
+}
+initializeStore();
 
 ReactDOM.render(
     <Counter />,
