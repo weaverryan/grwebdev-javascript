@@ -1,4 +1,7 @@
 import Store from './store';
+import Counter from './Counter';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Could this somehow load a CSS file for us?
 import './styles.css';
@@ -13,3 +16,8 @@ const store = new Store(app, [
     'Shearly Conditioned'
 ]);
 store.initialize();
+
+ReactDOM.render(
+    <Counter />,
+    document.getElementById('react-app')
+);
