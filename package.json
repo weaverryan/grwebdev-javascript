@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4"
+  }
+}
