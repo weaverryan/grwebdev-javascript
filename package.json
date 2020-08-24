@@ -11,6 +11,7 @@
     "css-loader": "^4.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "stimulus": "^1.1.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
