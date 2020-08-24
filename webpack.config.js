@@ -8,6 +8,10 @@ Encore
     .addEntry('app', './public/app.js')
     .enableSourceMaps(!Encore.isProduction())
     .enableReactPreset()
-; 
+    .configureBabelPresetEnv((options) => {
+        options.corejs = 3;
+        options.useBuiltIns = 'usage';
+    })
+;
 
 module.exports = Encore.getWebpackConfig(); 
