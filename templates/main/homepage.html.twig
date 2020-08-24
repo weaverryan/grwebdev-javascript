@@ -3,15 +3,18 @@
 {% block body %}
     <h1>Hello Modern JavaScript!</h1>
 
-    <div class="card">
+    <div class="card" data-controller="store">
         <div class="card-header">
             Products
         </div>
         <div class="card-body">
-            <div class="card-list" id="app"></div>
+            <div class="card-list" data-target="store.productList"></div>
 
             <hr>
-            <button id="button" class="btn btn-lg btn-primary">
+            <button
+                data-action="click->store#printProducts"
+                class="btn btn-lg btn-primary"
+            >
                 Baaa! <i class="fad fa-sheep"></i>
             </button>
         </div>
