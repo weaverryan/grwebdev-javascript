@@ -8,5 +8,14 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public', 'build'),
     },
-    mode: 'development'
+    mode: 'development',
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            }
+        ]
+    }
 }
