@@ -17,12 +17,14 @@ application.load(definitionsFromContext(context))
 
 const app = document.querySelector('#app');
 
+/*
 async function initializeStore() {
     const response = await axios.get('/products');
     const store = new Store(app, response.data);
     store.initialize();
 }
 initializeStore();
+*/
 
 ReactDOM.render(
     <Counter />,
